@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "에브리타임 게시글 / 댓글 삭제",
+  "description": "에브리타임에서 본인이 작성한 게시글과 댓글을 자동으로 두 삭제합니다..",
+  "version": "1.0",
+  "action": {
+    "default_title": "에브리타임 게시글 / 댓글 삭제",
+    "default_popup": "popup/popup.html"
+  },
+  "permissions": ["activeTab", "scripting", "cookies", "storage"],
+  "host_permissions": ["https://*.everytime.kr/*"],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.everytime.kr/*"],
+      "js": ["content/content.js"]
+    }
+  ]
+}

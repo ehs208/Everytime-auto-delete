@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에브리타임 댓글 / 글 자동삭제</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        width: 320px;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+      }
+      h2 {
+        text-align: center;
+        color: #4a90e2;
+        margin-bottom: 20px;
+      }
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      button {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button:hover {
+        background-color: #357ab8;
+        transform: translateY(-2px);
+      }
+      button:active {
+        background-color: #2c5f8a;
+        transform: translateY(0);
+      }
+      #response-data {
+        margin-top: 20px;
+        white-space: pre-wrap; /* 줄 바꿈을 유지하기 위해 사용 */
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>에브리타임 댓글 / 글 자동삭제</h2>
+    <div class="button-container">
+      <button id="send-request">글 삭제</button>
+      <button id="send-comment-request">댓글 삭제</button>
+      <button id="stop-deletion">삭제 작업 중단</button>
+    </div>
+    <div id="response-data">여기에 응답 데이터가 표시됩니다.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>

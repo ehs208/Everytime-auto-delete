@@ -7,7 +7,7 @@
     "default_title": "에브리타임 게시글 / 댓글 자동 삭제",
     "default_popup": "popup/popup.html"
   },
-  "permissions": ["activeTab", "scripting", "cookies", "storage"],
+  "permissions": ["activeTab", "cookies", "storage"],
   "host_permissions": ["https://*.everytime.kr/*"],
   "background": {
     "service_worker": "background/background.js"

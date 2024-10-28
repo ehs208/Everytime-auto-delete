@@ -1,9 +1,12 @@
 {
   "manifest_version": 3,
   "name": "에브리타임 게시글 / 댓글 삭제",
-  "description": "에브리타임에서 본인이 작성한 게시글과 댓글을 원클릭으로 모두 자동 삭제합니다.",
-  "version": "1.0",
+  "description": "에브리타임에서 본인이 작성한 게시글과 댓글을 한번의 클릭으로 모두 자동 삭제합니다.",
+  "version": "1.1",
   "action": {
+    "default_icon": {
+      "16": "images/icon-16.png"
+    },
     "default_title": "에브리타임 게시글 / 댓글 자동 삭제",
     "default_popup": "popup/popup.html"
   },

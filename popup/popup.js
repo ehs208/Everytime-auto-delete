@@ -7,9 +7,7 @@ function displayXmlResponse(xml) {
   document.getElementById("response-data").textContent = "삭제를 진행중입니다.";
 
   // id 값을 Chrome storage에 저장
-  chrome.storage.local.set({ articleIds: ids }, () => {
-    console.log("Article IDs saved:", ids);
-  });
+  chrome.storage.local.set({ articleIds: ids }, () => {});
 
   return ids;
 }
@@ -85,9 +83,7 @@ function sendPostAndDeleteArticles() {
           setTimeout(postAndDelete, 1000); // 1초 대기 후 다음 요청
         })
         .catch((error) => {
-          console.error("Error:", error);
-          document.getElementById("response-data").textContent =
-            "Error: " + error;
+          document.getElementById("response-data").textContent = "에러 발생";
         });
     }
 
@@ -185,15 +181,13 @@ function sendPostAndDeleteComments() {
                 .catch((error) => {
                   console.error("Error:", error);
                   document.getElementById("response-data").textContent =
-                    "Error: " + error;
+                    "에러 발생";
                 });
             }, index * 500); // 0.5초 대기 후 다음 요청
           });
         })
         .catch((error) => {
-          console.error("Error:", error);
-          document.getElementById("response-data").textContent =
-            "Error: " + error;
+          document.getElementById("response-data").textContent = "에러 발생";
         });
     }
 
@@ -214,3 +208,9 @@ document
 document.getElementById("stop-deletion").addEventListener("click", () => {
   stopDeletion = true;
 });
+
+document
+  .getElementById("feedback-button")
+  .addEventListener("click", function () {
+    window.open("https://forms.gle/CbvBNYTGbkeY8gjCA", "_blank");
+  });

@@ -2,7 +2,7 @@
 
 <img width="362" alt="image" src="https://github.com/user-attachments/assets/172050af-babf-4717-9aff-d30a8e9d140a">
 
-[다운로드 링크](https://drive.google.com/drive/folders/1Mz2cZ2m-pJf7mYoPiMMHh8whewpi-PT2?usp=sharing)
+[다운로드 링크](https://drive.google.com/file/d/1rPgHA-K6LPtlCR383MBpKIjKHHwTGTFT/view?usp=drive_link)
 
 ## 소개
 
@@ -14,7 +14,7 @@
 1. `chrome://extensions/` 을 주소창에 입력해 접속합니다.
 2. 우측 상단 `개발자 도구`를 활성화 해줍니다.
 3. 좌측 상단 `압축해제된 확장 프로그램을 로드합니다`를 클릭합니다.
-4. 상단의 [다운로드 링크](https://drive.google.com/drive/folders/1Mz2cZ2m-pJf7mYoPiMMHh8whewpi-PT2?usp=sharing) 에서 받은 폴더를 선택합니다.
+4. 상단의 [다운로드 링크](https://drive.google.com/file/d/1rPgHA-K6LPtlCR383MBpKIjKHHwTGTFT/view?usp=drive_link) 에서 받은 폴더를 선택합니다.
 
 ## 사용법
 
